@@ -72,6 +72,19 @@ foreach($notat as $landa=>$nota){
 }
 
 
+for($k = 0;$k<=4;$k++){
+    for($j = 4;$j>=$k;$j-=1){
+        echo "&nbsp";
+    }
+    for($i = 0;$i<=$k;$i++){
+        echo '*';
+        echo ' ';
+        
+    }
+    echo '<br>';
+}
+
+
 
 ?>
 <!DOCTYPE html>
