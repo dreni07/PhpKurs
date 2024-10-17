@@ -84,6 +84,56 @@ for($k = 0;$k<=4;$k++){
     echo '<br>';
 }
 
+for($i = 0;$i<5;$i++){
+    for($j = 0;$j<$i;$j++){
+        echo '*';
+    }
+    echo '<br>';
+    if($i === 4){
+        for($k = $i;$k>=0;$k--){
+            for($l = 1;$l<$k;$l++){
+                echo '*';
+            }
+            echo '<br>';
+        }
+        
+    }
+    
+}
+
+
+
+// given an array of n input
+// go and return an array only with the elements
+// that dont have the duplicates in there
+// function returningWithoutDuplicates($list){
+//     $array_with_unique = [];
+//     for($i = 0;$i<count($list);$i++){
+//         $array_before = [];
+//         $array_after = [];
+//         if($i > 0){
+//             for($j = $i - 1;$j>=0;$j--){
+//                 array_push($array_before,$list[$j]);
+//             }
+//         }
+//         if($i < count($list) - 1){
+//             for($k = $i + 1;$k<count($list);$k++){
+//                 array_push($array_after,$list[$k]);
+//             }
+//         }
+       
+
+//         if(!(in_array($list[$i],$array_before)) && !(in_array($list[$i],$array_after))){
+//             array_push($array_with_unique,$list[$i]);
+//         }
+//     }
+
+//     return $array_with_unique;
+// }
+
+// print_r(returningWithoutDuplicates(['Dren','Dren','Ylli']));
+
+
 
 
 ?>
