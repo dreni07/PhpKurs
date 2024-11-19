@@ -50,13 +50,11 @@
                     <td>
                         <a href="update.php?user_id=<?php echo $user['id']?>">Update</a>
                     </td>
-                    <td>
-                        <a href="index.php">Add</a>
-                    </td>
                 </tr>
 
             <?php endforeach; ?>
         </tbody>
     </table>
+    <a href="index.php">Add</a>
 </body>
 </html>
